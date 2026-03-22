@@ -1,0 +1,413 @@
+
+
+    <html>
+    <head>
+        <title>menu</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #head1
+        { 
+          background-color: plum;
+          text-align: center;
+          font-family:Verdana, Geneva, Tahoma, sans-serif ;
+          font-size: 5em;
+          font-weight: bold;
+          color: purple;
+
+        }
+
+      
+       .product
+       { 
+        background-color: white;
+        border: solid pink 2px;
+
+       }
+       .product:hover{
+        transform: scale(1.05);
+       }
+       .search
+       {
+        background-color: orange;
+        margin-top:20px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+       }
+
+        .search:hover
+        {
+        background-color: orangered;
+        border: 2px solid white ;
+        }
+        
+        
+
+        .icecream
+
+        {
+         display:flex  ;
+         justify-content: space-evenly;
+         
+
+        }
+        .price{
+            margin-top: 20px;
+            text-align: center;
+            font-size: large;
+        }
+        .flavour
+        { text-align: center;
+
+        }
+
+
+        body
+        {   
+         background-size: cover;
+
+        }
+        .productinfo
+        {
+            display:none;
+            background-color: lightpink;
+            color: purple;
+        }
+
+        #start{
+            background-color: pink;
+            text-align: center;
+            color: purple;
+            font-size: 5em;
+
+        }
+
+        #start a:hover
+        {    transform: scale(1.05);
+            text-transform: uppercase;
+
+        }
+
+        
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".search").click(function(){
+                $(this).siblings(".productinfo").slideToggle();
+            });
+        });
+    </script>
+    <body background="background.png">
+        <div id="head1">
+             OUR FLAVOURS
+        </div>
+        <br>
+        <br>
+        <h2 style="background-color: lightpink;color: purple; text-decoration: underline solid;"> ICE-CREAMS <small>&nbsp;&nbsp;(*shakes available)</small></h2>
+        <br>
+        <br>
+    
+        <div class="icecream">
+            
+            <div class="product" >
+                <h3 class="flavour">vanilla-delight</h3>
+                <img  src="vanilla ice cream.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.100 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Vanilla Delight - A classic, creamy<br> vanilla ice cream with a<br> rich and smooth texture.</div>
+                
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">chocolate bliss</h3>
+                <img  src="chocolate icecream.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.180 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Chocolate Bliss - Decadent chocolate<br> ice cream with an intense cocoa flavor,<br> perfect for chocolate lovers.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">American dryfruit</h3>
+                <img  src="american-dry-fruit.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">American Dryfruit - A nutty and<br> fruity treat packed with crunchy<br> dry fruits for a delightful texture.
+                </div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Mango magic</h3>
+                <img  src="mango.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Mango Magic - A tropical<br> delight with the sweet, juicy taste<br> of real mangoes.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Oreo-strawberry</h3>
+                <img  src="oreo-strawberry.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.190 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Oreo-Strawberry - A unique blend<br> of crushed Oreo cookies and fresh<br> strawberry flavors for a creamy delight.</div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+            <h2 style="background-color: lightpink;color: purple; text-decoration: underline solid;"> SPECIAL BERRY ICE-CREAMS<small>&nbsp;&nbsp;(*shakes available)</small> </h2>
+            <br>
+            <br>
+
+            <div class="icecream">
+
+            <div class="product" >
+                <h3 class="flavour">Blueberry burst</h3>
+                <img  src="Blueberry-Ice-Cream-Image-1.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.100 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Blueberry Burst – A refreshing<br> and tangy blueberry ice cream<br> with a rich fruity essence.</div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Berry bliss</h3>
+                <img  src="mixed berry.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.180 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Berry Bliss – A mixed berry<br> ice cream bursting with strawberries,<br> blueberries, and raspberries.</div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Chocolate Raspberry</h3>
+                <img  src="chocolate raspberry.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Chocolate Raspberry – The perfect<br> blend of rich chocolate and <br>tangy raspberries in every bite.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Cranberry Crave</h3>
+                <img  src="craneberry ice cream.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Cranberry Crave – A tart and<br> sweet cranberry-infused ice <br>cream that’s bold and refreshing.
+                </div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Strawberry Swirl</h3>
+                <img  src="strawberry.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.190 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Strawberry Swirl – Creamy<br> vanilla ice cream swirled with<br> luscious strawberry sauce.</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 style="background-color: lightpink;color: purple; text-decoration: underline solid;"> SPECIAL SHAKES </h2>
+        <br>
+        <br>
+        
+        <div class="icecream">
+
+            <div class="product" >
+                <h3 class="flavour">Belgium chocolate</h3>
+                <img  src="belgium shake.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.250</h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Belgium Chocolate Shake – A <br>luxurious and creamy shake made<br> with premium Belgian chocolate.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Kaju Anjeer</h3>
+                <img  src="kaju anjeer shake.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Kaju Anjeer Shake – A rich<br> and nutty shake infused with<br> cashew and fig flavors.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Oreo Shake</h3>
+                <img  src="oreo shake.jpeg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.200 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Oreo Shake – A thick and delicious<br> shake made with crushed Oreos<br> and vanilla ice cream.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Brownie Shake</h3>
+                <img  src="brownie shake.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.250 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Brownie Shake – A fudgy shake<br> loaded with chocolate brownies<br> and topped with whipped cream.
+                </div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Freak Shake</h3>
+                <img  src="freak shake.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.350 </h5>
+                <button  class="search">know more</button>
+                <div class="productinfo">Freak Shake – An over-the-top<br> indulgent shake with layers of<br> chocolate, candies, and ice cream.</div>
+            </div>
+
+        </div>
+        <br>
+        <p> Rs. 25 extra for shake with ice-cream</p>
+
+        <br>
+        <br>
+        <h2 style="background-color: lightpink;color: purple; text-decoration: underline solid;"> SUNDAES</h2>
+        <br>
+        <br>
+
+        <div class="icecream">
+            <div class="product" >
+                <h3 class="flavour">Choco Bliss 🍫</h3>
+                <img  src="choco sundae.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.400</h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Choco Bliss Sundae 🍫 – A heavenly<br> chocolate-loaded sundae topped<br> with fudge sauce and choco chips.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Berrylicious Delight 🍓</h3>
+                <img  src="berry sundae.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.330 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Berrylicious Delight 🍓 – A <br>refreshing sundae with fresh berries,<br> berry sauce, and whipped cream.</div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Caramel Dream  🍯</h3>
+                <img  src="caramel sundae.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.350 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Caramel Dream 🍯 – Velvety <br>caramel ice cream layered with<br> caramel sauce and crunchy nuts.
+                </div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Cookie Monster 🍪</h3>
+                <img  src="cookie sundae.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.400 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Cookie Monster 🍪 – A cookie-<br>lover’s sundae loaded with crushed<br> cookies and chocolate drizzle.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Peanut Butter Blast 🥜</h3>
+                <img  src="peanut butter sundae.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.350 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Peanut Butter Blast 🥜 – A nutty<br> delight with peanut butter ice<br> cream, peanuts, and chocolate sauce.
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <h2 style="background-color: lightpink;color: purple; text-decoration: underline solid;"> WAFFLES </h2>
+        <br>
+        <br>
+        <div class="icecream">
+            <div class="product" >
+                <h3 class="flavour">Belgium chocolate</h3>
+                <img  src="belgium waffle.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.400</h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Belgium Chocolate Waffle –<br> A crispy waffle drizzled with <br>melted Belgian chocolate.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour">Lotus Biscoff</h3>
+                <img  src="biscoff-waffles.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.330 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Lotus Biscoff Waffle – A caramelized<br> biscuit-flavored waffle topped <br>with Lotus Biscoff spread.
+                </div>
+            </div>
+            <br>
+
+            <div class="product" >
+                <h3 class="flavour"> Nutella</h3>
+                <img  src="nutella.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.350 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Nutella Waffle – A warm waffle<br> generously coated with Nutella<br> and sprinkled with nuts.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour"> Almond Brownie</h3>
+                <img  src="Almond-Brownie-Waffle.jpg" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.400 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Almond Brownie Waffle – A <br>delightful waffle topped with<br> chocolate brownies and almonds.</div>
+            </div>
+
+            <div class="product" >
+                <h3 class="flavour">Red velvet</h3>
+                <img  src="red velvet waffle.webp" height="200px" width="200px">
+                <br>
+                <h5 class="price"> Rs.350 </h5>
+                <button class="search">know more</button>
+                <div class="productinfo">Red Velvet Waffle – A <br>soft red velvet waffle paired<br> with a cream cheese drizzle.
+                </div>
+            </div>
+            
+
+        </div>
+        <br>
+        <br>
+        <div id="start">
+            <a href="cart.html">start ordering...</a>
+        </div>
+
+    </body>
+    </html>

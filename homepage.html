@@ -1,0 +1,206 @@
+<html>
+<head>
+    <title> home page </title>
+    <style>
+        *{ margin: 0;
+            padding: 0;
+        }
+        #head
+        {  font-family: cursive;
+           font-size: 4em;
+           text-align: center ;
+           color:rgb(147, 65, 182);
+
+        }
+        #headline
+        {
+            font-family: cursive;
+            font-size: medium;
+           text-align: center ;
+           color:rgb(147, 65, 182);
+           
+
+        }
+        .div1
+        { background-color: pink;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+        #aboutus
+        { 
+            color: blueviolet;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration:underline solid ;
+
+        }
+        #aboutus:hover{
+            cursor: pointer;
+        }
+        #aboutusinfo
+        {
+            display:none;
+            font-size: 1.5em;
+            background-color: lightpink;
+            color: blueviolet;
+        }
+        #speciality
+        { 
+            color: blueviolet;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: underline solid;
+
+        }
+        #speciality:hover{
+            cursor: pointer;
+        }
+        #specialityinfo
+        {
+            display:none;
+            font-size: 1.5em;
+            background-color: lightpink;
+            color: blueviolet;
+        }
+        .flavor
+            {
+            background-color: rgb(71, 209, 230);
+            height: 400px;
+            width: 350px;
+            border: 2px solid palevioletred;
+            justify-items: center;
+            text-align: center;
+            margin-right:20px;
+               
+            }
+            
+
+           .main
+            {
+                 margin-top:50px;
+                 display:flex;
+                 justify-content:space-evenly;
+                 flex-wrap:wrap;
+                 margin-bottom: 50px;
+               
+            }
+
+            button
+            {
+                background-color: peachpuff;
+                color: blue;
+                margin-bottom: 30px;
+            }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#aboutus").click(function(){
+                $("#aboutusinfo").slideToggle();
+
+            });
+
+        });
+        $(document).ready(function(){
+            $("#speciality").click(function(){
+                $("#specialityinfo").slideToggle();
+
+            });
+
+        });
+    </script>
+
+</head>
+<body background="background.png" style="background-size: cover;">
+    <div class="div1">
+       <img src="logo.webp" height="100px" width="100px" style="margin-right: 20px;">
+       <h1 id="head"> ICEBERRY <br>
+       
+       </h1>
+    </div>
+    <div class="div1">
+        <h2 id="headline">Scoops Of Joy Delivered To Your Door</h2>
+    </div>
+    
+    <div id="aboutus"> About us: </div>
+    <div id="aboutusinfo">
+        Welcome to Iceberry, your ultimate destination for delightful, handcrafted ice creams! At Iceberry, 
+        we believe that every scoop tells a story—a story of rich flavors, fresh ingredients, and a passion for creating the perfect frozen treat.
+        <br>
+        At Iceberry, quality and happiness go hand in hand. Every bite is a promise of freshness, purity, and a touch of magic. So, come join us on this delicious adventure—
+        because life is better with ice cream!
+        <br>
+
+        Indulge. Enjoy. Iceberry.
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <p id="speciality"> Speciality: </p>
+    <div id="specialityinfo">
+        Welcome to Iceberry – A Berry & Chocolate Delight!
+        At Iceberry, we craft the finest berry and chocolate ice creams using real fruits and premium cocoa. 
+        From juicy strawberries to rich dark chocolate,
+        every scoop is a perfect blend of freshness and indulgence. Treat yourself to a creamy, flavorful experience like no other!
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <button id="cart"><a href="cart.html" target="_blank">cart</a></button>
+    <button id="login"><a href="form.html" target="_blank">login</a></button>
+    <button id="ordering"><a href="menu.html" target="_blank">start ordering</a></button>
+    
+        <h2 style="text-align: center; color: rgb(147, 65 ,182);background-color: pink; box-shadow: inset 3px rgb(190, 30, 230);font-size:2em;">New Releases</h2>
+        <div class="main">
+        <div class="flavor" style="margin-left: 20px;" >
+                <h1>Blueberry burst<h1>
+                <img  src="Blueberry-Ice-Cream-Image-1.jpg" height="200px" width="200px">
+                <br>
+                <p>Smooth and creamy with real blueberry goodness.</p>
+        </div>
+        <div class="flavor">
+            <h1>Berry bliss<h1>
+            <img  src="mixed berry.jpeg" height="200px" width="200px">
+            <br>
+            <p>A delightful mix of strawberries, blueberries, and raspberries</p>
+        </div>
+
+        <div class="flavor" >
+            <h1>chocolate raspberries<h1>
+            <img  src="chocolate raspberry.jpeg" height="200px" width="200px">
+            <br>
+            <p>A delightful mix of juicy raspberries and rich dark chocolate</p>
+        </div>
+
+        <div class="flavor" >
+            <h1>Craneberry crave<h1>
+            <img  src="craneberry ice cream.jpeg" height="200px" width="200px">
+            <br>
+            <p>Tart cranberry balanced with creamy sweetness.</p>
+            </div>
+    </div>
+
+
+
+    
+
+    
+</body>
+<footer>
+    <p style="text-align: right; font-size: larger;"> &reg;</p>
+    <p>join us on instagram and facebook </p>
+    <p> <bold> all rights reserved &copy; </bold></p>
+</footer>
+</html>
